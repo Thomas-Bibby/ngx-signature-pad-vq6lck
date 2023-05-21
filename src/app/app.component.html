@@ -1,0 +1,8 @@
+<div class="container">
+  <ngx-signature-pad [config]="config" #testPad></ngx-signature-pad>
+</div>
+
+<button (click)="clear()">clear</button>
+<button (click)="getImage()" [disabled]="isInValid()">get image</button>
+<button (click)="changeConfig()">change config</button>
+<button (click)="forceReload()">forceReload</button>
